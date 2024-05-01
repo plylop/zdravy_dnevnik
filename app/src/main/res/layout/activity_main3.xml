@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <LinearLayout
+        android:id="@+id/bottomPanel1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/black"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <Button
+            android:id="@+id/buttonMain"
+            android:layout_width="37dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#000000"
+            android:text="Главный"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/buttonTraining"
+            android:layout_width="2dp"
+            android:layout_height="38dp"
+            android:layout_weight="1"
+            android:backgroundTint="#000000"
+            android:text="Треня"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/buttonJokes"
+            android:layout_width="44dp"
+            android:layout_height="37dp"
+            android:layout_weight="1"
+            android:backgroundTint="#000000"
+            android:text="Мотивация "
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/bottomPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="652dp"
+        android:background="@android:color/black"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="0dp">
+
+        <EditText
+            android:id="@+id/timeInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#000000"
+            android:hint="Введите время (секундах)"
+            android:textColorHint="@android:color/white"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/startButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Старт"
+            android:backgroundTint="#000000"
+            android:textColor="@android:color/white"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/counterPanel"
+        android:layout_width="410dp"
+        android:layout_height="59dp"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/bottomPanel1"
+        app:layout_constraintTop_toBottomOf="@+id/bottomPanel"
+        app:layout_constraintVertical_bias="0.055"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Подходы"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/bottomPanel"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.057" />
+
+        <Button
+            android:id="@+id/incrementButton"
+            android:layout_width="58dp"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:backgroundTint="#000000"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/counterTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="0"
+            android:textColor="@android:color/white"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/resetButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Сброс"
+            android:backgroundTint="#000000"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/checkBoxLayout"
+        android:layout_width="411dp"
+        android:layout_height="107dp"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomPanel1"
+        app:layout_constraintTop_toBottomOf="@+id/counterPanel"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp">
+
+        <EditText
+            android:id="@+id/exerciseNameEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_margin="16dp"
+            android:background="@android:color/transparent"
+            android:hint="Название упражнения"
+            android:textColorHint="@android:color/white"
+            android:padding="10dp"
+            android:textColor="@android:color/white" />
+
+        <CheckBox
+            android:id="@+id/exerciseCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="Выполнено"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/checkBoxLayout1"
+        android:layout_width="411dp"
+        android:layout_height="107dp"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomPanel1"
+        app:layout_constraintTop_toBottomOf="@+id/counterPanel"
+        app:layout_constraintVertical_bias="0.262"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp">
+
+        <EditText
+            android:id="@+id/exerciseNameEditText1"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_margin="16dp"
+            android:background="@android:color/transparent"
+            android:hint="Название упражнения"
+            android:textColorHint="@android:color/white"
+            android:padding="10dp"
+            android:textColor="#FF0000" />
+
+        <CheckBox
+            android:id="@+id/exerciseCheckBox1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="Выполнено"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/checkBoxLayout3"
+        android:layout_width="411dp"
+        android:layout_height="107dp"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomPanel1"
+        app:layout_constraintTop_toBottomOf="@+id/counterPanel"
+        app:layout_constraintVertical_bias="0.524"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp">
+
+        <EditText
+            android:id="@+id/exerciseNameEditText3"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_margin="16dp"
+            android:background="@android:color/transparent"
+            android:hint="Название упражнения"
+            android:padding="10dp"
+            android:textColorHint="@android:color/white"
+            android:textColor="@android:color/white" />
+
+        <CheckBox
+            android:id="@+id/exerciseCheckBox3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="Выполнено"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/checkBoxLayout4"
+        android:layout_width="411dp"
+        android:layout_height="95dp"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomPanel1"
+        app:layout_constraintTop_toBottomOf="@+id/counterPanel"
+        app:layout_constraintVertical_bias="0.764"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-1dp">
+
+        <EditText
+            android:id="@+id/exerciseNameEditText4"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_margin="16dp"
+            android:background="@android:color/transparent"
+            android:hint="Название упражнения"
+            android:padding="10dp"
+            android:textColorHint="@android:color/white"
+            android:textColor="@android:color/white" />
+
+        <CheckBox
+            android:id="@+id/exerciseCheckBox4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="Выполнено"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/checkBoxLayout5"
+        android:layout_width="406dp"
+        android:layout_height="94dp"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomPanel1"
+        app:layout_constraintTop_toBottomOf="@+id/counterPanel"
+        app:layout_constraintVertical_bias="0.99"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="2dp">
+
+        <EditText
+            android:id="@+id/exerciseNameEditText5"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_margin="16dp"
+            android:background="@android:color/transparent"
+            android:hint="Название упражнения"
+            android:padding="10dp"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white" />
+
+        <CheckBox
+            android:id="@+id/exerciseCheckBox5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="Выполнено"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

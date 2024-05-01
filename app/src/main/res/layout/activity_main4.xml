@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <LinearLayout
+        android:id="@+id/bottomPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <Button
+            android:id="@+id/buttonMain"
+            android:layout_width="37dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#000000"
+            android:text="Главный"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/buttonTraining"
+            android:layout_width="2dp"
+            android:layout_height="38dp"
+            android:layout_weight="1"
+            android:backgroundTint="#000000"
+            android:text="Треня"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/buttonJokes"
+            android:layout_width="44dp"
+            android:layout_height="37dp"
+            android:layout_weight="1"
+            android:backgroundTint="#000000"
+            android:text="Мотивация "
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="96dp"
+        android:layout_height="105dp"
+        android:src="@drawable/img_1"
+        app:layout_constraintBottom_toTopOf="@+id/bottomPanel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.056"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.147" />
+
+    <TextView
+        android:id="@+id/quoteLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Мухаммед Али"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/quoteText"
+        android:layout_width="277dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="476dp"
+        android:text="«Я настолько быстр,что прошлой ночью в своей комнате в отеле я выключил свет и оказался в кровати перед тем как в комнате стало темно»"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/bottomPanel"
+        app:layout_constraintStart_toEndOf="@+id/imageView" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="96dp"
+        android:layout_height="105dp"
+        android:src="@drawable/img2"
+        app:layout_constraintBottom_toTopOf="@+id/bottomPanel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.389" />
+
+    <TextView
+        android:id="@+id/quoteLabel2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:text="Майк Тайсон"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView1"
+        app:layout_constraintTop_toTopOf="@+id/imageView1" />
+
+    <TextView
+        android:id="@+id/quoteText3"
+        android:layout_width="263dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="368dp"
+        android:text="«Лучше говорить с набитым ртом, чем молчать с выбитыми зубами»"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/bottomPanel"
+        app:layout_constraintStart_toEndOf="@+id/imageView1" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="96dp"
+        android:layout_height="105dp"
+        android:src="@drawable/img3"
+        app:layout_constraintBottom_toTopOf="@+id/bottomPanel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.607" />
+
+    <TextView
+        android:id="@+id/quoteLabel3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Рой Джонс"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="@+id/imageView3" />
+
+    <TextView
+        android:id="@+id/quoteText4"
+        android:layout_width="263dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="248dp"
+        android:text="«Борись до конца, боль временна, триумф вечен!»"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/bottomPanel"
+        app:layout_constraintStart_toEndOf="@+id/imageView3" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="96dp"
+        android:layout_height="105dp"
+        android:src="@drawable/img4"
+        app:layout_constraintBottom_toTopOf="@+id/bottomPanel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.816" />
+
+    <TextView
+        android:id="@+id/quoteLabel4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="О’Нил Шакил"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/imageView4" />
+
+    <TextView
+        android:id="@+id/quoteText5"
+        android:layout_width="263dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="124dp"
+        android:text="«Трудно быть секс-символом НБА. Но кто-то же должен им быть»"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/bottomPanel"
+        app:layout_constraintStart_toEndOf="@+id/imageView4" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Цитаты"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomPanel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.057" />
+</androidx.constraintlayout.widget.ConstraintLayout>
